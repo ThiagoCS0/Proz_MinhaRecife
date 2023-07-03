@@ -15,129 +15,7 @@ Na nova página, fale sobre dois outros pontos turísticos do Recife Antigo e si
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Recife</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-image: url("./src/bg.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        header {
-            display: flex;
-            height: 80px;
-            align-items: center;
-            background-color: #1046B0;
-            color: white;
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            height: 4%;
-            width: 100%;
-        }
-
-        li {
-            display: flex;
-            width: 20%;
-            height: 40px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        li:hover {
-            background-color: #07D;
-            cursor: pointer;
-        }
-
-        a {
-            text-decoration: none;
-            font-weight: bold;
-            color: black;
-            font-weight: bold;
-        }
-
-        a:visited {
-            color: black;
-        }
-
-        a:hover {
-            transform: scale(1.1);
-        }
-
-        #imagens {
-            width: 50%;
-            height: 80%;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            overflow-x: hidden;
-            overflow-y: auto;
-            ;
-        }
-
-        #imagens div {
-            box-sizing: border-box;
-            display: flex;
-            height: 50%;
-            margin: 8px;
-        }
-
-        #imagens div div {
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            height: auto;
-            text-align: center;
-            transition: transform 1s;
-        }
-
-        #imagens div div:hover {
-            transform: scale(1.05);
-        }
-
-        #imagens div div p {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            height: 30%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        span {
-            font-weight: bold;
-        }
-        main{
-            box-sizing: border-box;
-            padding: 0 30px;
-        }
-        section div {
-            width: 50%;
-        }
-
-        section div div {
-            display: flex;
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: nowrap; 
-        }
-
-        section div div div {
-            padding: 8px;
-            display: flex;
-            color: #FFF;
-            flex-direction: column;
-            background-color: rgba(0, 0, 0, 0.9);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -159,7 +37,7 @@ Na nova página, fale sobre dois outros pontos turísticos do Recife Antigo e si
         </ul>
     </nav>
     <main>
-        <section style="display: flex; width: 100%; height: 100%;">
+        <section class="selecao">
             <div class="colunas">
                 <div>
                     <img src="./src/efb.jpg" alt="Esculturas Francisco Brennand">
@@ -183,7 +61,7 @@ Na nova página, fale sobre dois outros pontos turísticos do Recife Antigo e si
                             <br><br>
                             No ano de 2014, todas as obras foram restauradas, assim como o parque, além do recebimento de
                             reforço na segurança do complexo.
-                        </p>
+                        </p><br><br>
                     </div>
                 </div>
             </div>
@@ -210,7 +88,7 @@ Na nova página, fale sobre dois outros pontos turísticos do Recife Antigo e si
                             <br>
                             O Paço do Frevo funciona no antigo prédio da Western Telegraph Company, construído em estilo
                             neoclássico tardio inglês e tombado pelo IPHAN
-                            <br><br>
+                            <br><br><br><br>
                         </p>
                     </div>
                 </div>

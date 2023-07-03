@@ -1,0 +1,228 @@
+<!--
+Com a página sobre o Marco Zero feita, é necessário de uma outra página e de um link que leve até ela.
+Na nova página, fale sobre dois outros pontos turísticos do Recife Antigo e siga os pré-requisitos a seguir: 
+
+ 1. crie um link que irá direcionar para essa nova página; 
+ 2. adicione imagens sobre os lugares. 
+
+ Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto
+ no campo ao lado para que outros desenvolvedores possam analisá-lo.
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Recife</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("./src/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            display: flex;
+            height: 80px;
+            align-items: center;
+            background-color: #1046B0;
+            color: white;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            height: 4%;
+            width: 100%;
+        }
+
+        li {
+            display: flex;
+            width: 20%;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li:hover {
+            background-color: #07D;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+
+        #imagens {
+            width: 50%;
+            height: 80%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            overflow-y: auto;
+            ;
+        }
+
+        #imagens div {
+            box-sizing: border-box;
+            display: flex;
+            height: 50%;
+            margin: 8px;
+        }
+
+        #imagens div div {
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: auto;
+            text-align: center;
+            transition: transform 1s;
+        }
+
+        #imagens div div:hover {
+            transform: scale(1.05);
+        }
+
+        #imagens div div p {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span {
+            font-weight: bold;
+        }
+        main{
+            box-sizing: border-box;
+            padding: 0 30px;
+        }
+        section div {
+            width: 50%;
+        }
+
+        section div div {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap; 
+        }
+
+        section div div div {
+            padding: 8px;
+            display: flex;
+            color: #FFF;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./src/img3.png" alt="Logo Minha Recife" height="100%">
+        <div>
+            <h1>A Minha Recife</h1>
+            <h3>Venha conhecer bem de pertinho a nossa linda Recife!</h3>
+        </div>
+        <img src="./src/img2.jpg" alt="Bandeira de Recife" style="position: absolute; right: 0; height:80px;">
+    </header>
+    <nav>
+        <ul style="list-style: none; display: flex; background-color: dodgerblue;">
+            <li><a href="index.html">RECIFE</a></li>
+            <li><a href="#">CULINARIA</a></li>
+            <li><a href="#">HOSPEDAGEM</a></li>
+            <li><a href="turismo.html">TURISMO</a></li>
+            <li><a href="#">MAIS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section style="display: flex; width: 100%; height: 100%;">
+            <div class="colunas">
+                <div>
+                    <img src="./src/efb.jpg" alt="Esculturas Francisco Brennand">
+                    <div>
+                        <h3 style="text-align: center; border-bottom: 1px solid #FFF; padding-bottom: 10px;">Esculturas
+                            Francisco Brennand</h3>
+                        <br>
+                        <p>O Parque das Esculturas Francisco Brennand é um museu de arte a céu aberto localizado na cidade
+                            do Recife, capital do estado brasileiro de Pernambuco. Constitui um dos principais feitos do
+                            artista plástico pernambucano Francisco Brennand.
+                            <br>
+                            Idealizado na década de 1990 como parte do projeto “Eu vi o mundo… Ele Começava no Recife” para
+                            comemoração dos 500 anos do descobrimento do Brasil, o parque foi inaugurado em 29 de dezembro
+                            2000.
+                            <br><br>
+                            Ao total, existem 90 esculturas criadas por Francisco Brennand, sendo a principal obra no
+                            complexo a Torre de Cristal, com 32 metros de altura e confeccionada em argila e bronze.
+                            <br>
+                            Apesar de ser um dos principais pontos turísticos de Recife, em pesquisa ao Jornal do Comércio
+                            feito em 2018, compreendeu que mais da metade da população não conhece o parque.
+                            <br><br>
+                            No ano de 2014, todas as obras foram restauradas, assim como o parque, além do recebimento de
+                            reforço na segurança do complexo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="colunas" style="border-right: 20px;">
+                <div>
+                    <img src="./src/mpf.jpg" alt="Esculturas Francisco Brennand">
+                    <div>
+                        <h3 style="text-align: center; border-bottom: 1px solid #FFF; padding-bottom: 10px;">Museu Paço do
+                            Frevo</h3>
+                        <br>
+                        <p>
+                            O Paço do Frevo é um espaço cultural dedicado à difusão, pesquisa, lazer e formação nas áreas da
+                            dança e música do frevo localizado na cidade do Recife, capital de Pernambuco, Brasil.
+                            Surgiu através de uma parceria entre a Prefeitura do Recife, a Fundação Roberto Marinho, o IPHAN
+                            e o Governo Federal
+                            <br>
+                            Um dos espaços voltados à cultura mais solicitados de Pernambuco ao lado de museus como o
+                            Instituto Ricardo Brennand,
+                            o Cais do Sertão e a Oficina Cerâmica Francisco Brennand, o Paço do Frevo recebeu mais de 120
+                            mil visitantes em seu primeiro ano de funcionamento.
+                            <br><br>
+                            Inaugurado no dia 9 de fevereiro de 2014, o Paço do Frevo tem museografia assinada pela diretora
+                            de teatro e cenógrafa Bia Lessa
+                            <br>
+                            O Paço do Frevo funciona no antigo prédio da Western Telegraph Company, construído em estilo
+                            neoclássico tardio inglês e tombado pelo IPHAN
+                            <br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer style="background-color: #1046B0; color: silver;">
+        <p style="position: absolute; left: 50%; transform: translateX(-50%); text-align: center; top: 25%;"><span>Minha
+                Recife</span> - Praça dos praças, Bairro de Santo Santo, Recife - PE, CEP 98.765-432 | Telefone do funk
+            do Yudi: +55 81 4002.8922</p>
+        <img src="./src/img2.jpg" alt="" style="position: absolute; top: 0; right: 0; height: 100%;">
+    </footer>
+</body>
+
+</html>

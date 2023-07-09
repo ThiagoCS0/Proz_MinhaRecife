@@ -2,6 +2,6 @@
 <p align="center">Exercício do curso de programação, com o tema:</p>
 <h3 align="center">Turismo em Recife</h3>
 <h4 align="center"> 
-    <a href="https://thiagocs0.github.io/Proz_MinhaRecife/">Página Minha Recife</a><br><br>
+    <a href="https://thiagocs0.github.io/Proz_MinhaRecife/" alt="Página Minha Recife" target="_blank" rel="noopener noreferrer">Página Minha Recife</a><br><br>
     :construction:  Projeto em construção  :construction:
 </h4>

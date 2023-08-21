@@ -92,21 +92,26 @@ nav li:hover {
     cursor: pointer;
 }
 
-a {
-    text-align: center;
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+}
+
+a {
+    height: 100%;
     text-decoration: none;
     font-weight: bold;
-    color: #FFF;
-    font-weight: bold;
+    color: #CCC;
 }
 
 a:visited {
-    color: #FFF;
+    color: #CCC;
 }
 
 a:hover {
-    transform: scale(1.05);
+    color: #FFF;
 }
 
 main {
@@ -160,11 +165,16 @@ main {
 #imagens div {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 19vw;
+    width: 20vw;
     height: 50vh;
     border-radius: 10px;
     text-align: center;
     overflow: hidden;
+    transition: transform 1s;
+}
+
+#imagens div:hover {
+ transform: scale(1.04);
 }
 
 #imagens p {
@@ -178,7 +188,6 @@ main {
 
 footer {
     background-color: var(--base);
-    color: silver;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -194,7 +203,12 @@ footer div{
     padding: 25px;
 }
 
-footer p {
-    text-align: start;
-    user-select: text;
+footer a:first-child{
+    display: flex;
+    flex-direction: column;
+    gap:  10px;
 }
+
+/*
+    align-items: center;
+    justify-content: center;*/
